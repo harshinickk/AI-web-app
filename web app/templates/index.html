@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+				<br></br>
+				<title>IntelligentIrrigation</title>
+			
+                <link rel= "stylesheet" type= "text/css" href= "static/style.css">
+
+	</head>
+	
+	<body>
+	
+<div class="circle">            
+</div>
+<br></br>
+<div class="circle1">          
+</div>
+<div class="circle2">               
+</div>
+<br></br>
+<div class="circle3">               
+</div>
+<div class="circle4">               
+</div>
+			<div class="one">
+				<h1>Intelligent Irrigation System</h1>
+				<center><img src="static/agriiot.jpg" style=" width:500px height:600px;"></center>
+		
+				<br></br>
+		 
+			<div class="onesub">
+		 
+				<h2>Is it the right time to irrigate your plants?</h2>
+				<h2>Check it now!!!</h2>
+			</div>
+	   
+				<form method = "POST" action = "{{ url_for('ppredict')}}">
+
+					<label for = "moisture">Moisture</label>
+					<input type = 'number' id = 'moisture', name = 'moisture', required = 'required', placeholder = 'Enter moisture value...' >
+
+					<br></br>
+
+					<label for = "temperature">Temperature</label>
+					<input type = 'number' id = 'temperature', name = 'temp', required = 'required', placeholder = 'Enter temperature value...' >
+
+
+					<br></br>
+
+					<label></label>
+					<input id="predict" type="submit" value="Predict" />
+				</form>
+				    
+					<br></br>
+					
+				<center><img src="{{s}}" style=" width:100px height:100px ;"></center>
+				<center><h2>{{pprediction}}</h2></center>
+				
+			</div>
+<div class="circle">            
+</div>
+<br></br>
+<div class="circle1">          
+</div>
+<div class="circle2">               
+</div>
+<br></br>
+<div class="circle3">               
+</div>
+<div class="circle4">               
+</div>
+	 
+			<div class="two">
+	  
+					<br></br>
+					<br></br>
+		 
+			<div class="twosub">
+					<h2>Check the condition of your soil here!!</h2>
+					</div>
+		 
+				<form method = "POST" action = "{{ url_for('dpredict')}}">
+
+					<label for = "ms">Soil Moisture</label>
+					<input type = 'number' id = 'ms', name = 'Moisture_Soil', required = 'required', placeholder = 'Enter soil moisture value...' >
+
+					<br></br>
+
+					<label for = "ma">Air Moisture</label>
+					<input type = 'number' id = 'ma', name = 'Moisture_Air', required = 'required', placeholder = 'Enter air moisture value...' >
+
+
+					<br></br>
+
+					<label></label>
+					<input id="predict" type="submit" value="Predict" />
+				</form>
+				
+				<center><h2>{{dprediction}}</h2></center>
+				
+			</div>
+	 
+			<div class="three">
+	  
+					<br></br>
+					<br></br>
+			
+			<div class="threesub">
+					<h2>Do you want to know the next day of irrigation??</h2>
+					<h2>Find out here!!!</h2>
+			</div>
+		 
+				<form method = "POST" action = "{{ url_for('cpredict')}}">
+
+					<label for = "m">Moisture</label>
+					<input type = 'number' id = 'm', name = 'Moisture', required = 'required', placeholder = 'Enter moisture value...' >
+
+					<br></br>
+
+					<label></label>
+					<input id="predict" type="submit" value="Predict" />
+					
+		        </form>
+				
+				<center><h2>{{cprediction}}</h2></center>
+				
+	        </div>
+<div class="circle">            
+</div>
+<br></br>
+<div class="circle1">          
+</div>
+<div class="circle2">               
+</div>
+<br></br>
+<div class="circle3">               
+</div>
+<div class="circle4">               
+</div>
+	</body>
+</html>

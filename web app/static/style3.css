@@ -1,0 +1,112 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+	 background: linear-gradient(to left,#fff 0%,#92fe9d 100%);
+}
+
+h1 { 
+	text-align: center;
+	
+	}
+	
+h2 { 
+	text-align: center;
+	}
+	
+form {
+text-align :center;
+}
+
+input {
+width: 300px;
+height:45px;
+
+}
+
+select{
+  font-size:20px;
+  color:black;
+  background:transparent;
+  border:2px solid #1EEE;
+  border-radius:20px;
+  width: 150px;
+  height: 30px;
+  outline:none;
+  
+}
+input[type=submit] {
+  font-size:20px;
+  color:black;
+  background:transparent;
+  border:2px solid #1EEE;
+  border-radius:20px;
+  width: 150px;
+  height: 50px;
+  outline:none;
+  
+}
+
+input[type=submit]:hover{
+	  background-color:  #92fe9d ;
+      color:black;
+}
+
+input[type=file] {
+  font-size:20px;
+  color:black;
+  background:transparent;
+  width: 290px;
+  height: 30px;
+  outline:none;
+}
+
+ 
+label {
+  font-size: 20px;
+  display: inline-block;
+  width: 200px;
+  text-align:right;
+}​
+
+.circle { 
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to left, #00c9ff, #92fe9d);
+    border-radius: 50%;
+    float: left;
+}
+
+.circle1 { 
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to left, #92fe9d,#00c9ff);
+    border-radius: 50%;
+	float:left;
+}
+.circle2 { 
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to left, #92fe9d,#00c9ff);
+	border-radius:50%;
+    float:right;
+}
+
+.circle3 { 
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(to left,#00c9ff,#92fe9d);
+	border-radius:50%;
+    float:right;
+}
+
+.circle4 { 
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(to left, #92fe9d,#00c9ff);
+	border-radius:50%;
+    float:right;
+}

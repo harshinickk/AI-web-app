@@ -1,0 +1,87 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h6{
+	padding-left:300px;
+	color:#00c9ff;
+	font-size:30px;
+}
+
+p{
+  padding-left:300px;
+  font-size:20px;  
+  padding-right:100px;
+  
+}
+
+form {
+text-align :center;
+}
+
+label{
+	padding-left:100px;
+}
+
+input[type=submit] {
+  font-size:20px;
+  color:black;
+  background:transparent;
+  border:3px solid #1EEEEE;
+  border-radius:20px;
+  width: 100px;
+  height: 50px;
+  outline:none;
+  
+}
+
+input[type=submit]:hover{
+	  background-color:  #92fe9d ;
+      color:black;
+}
+
+body{
+    font-family: Times New Roman;
+}
+
+
+.circle { 
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to left, #00c9ff, #92fe9d);
+    border-radius: 50%;
+    float: left;
+}
+
+.circle1 { 
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to left, #92fe9d,#00c9ff);
+    border-radius: 50%;
+	float:left;
+}
+.circle2 { 
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to left, #92fe9d,#00c9ff);
+	border-radius:50%;
+    float:right;
+}
+
+.circle3 { 
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(to left,#00c9ff,#92fe9d);
+	border-radius:50%;
+    float:right;
+}
+
+.circle4 { 
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(to left, #92fe9d,#00c9ff);
+	border-radius:50%;
+    float:right;
+}
+

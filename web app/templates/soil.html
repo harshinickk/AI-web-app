@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+				<br></br>
+				<title>IntelligentIrrigation</title>
+			
+                <link rel= "stylesheet" type= "text/css" href= "static/style.css">
+
+	</head>
+	
+	<body>
+	
+<div class="circle">            
+</div>
+<br></br>
+<div class="circle1">          
+</div>
+<div class="circle2">               
+</div>
+<br></br>
+<div class="circle3">               
+</div>
+<div class="circle4">               
+</div>
+			<div class="one">
+				<h1>Soil Quality</h1>
+		
+				<br></br>
+		 
+			<div class="onesub">
+		 
+				<h2>Does your soil contain appropriate level of Carbon?</h2>
+				<h2>Check it now!!!</h2>
+			</div>
+	   
+				<form method = "POST" action = "{{ url_for('cp')}}">
+
+					<label for = "cvalue">C value</label>
+					<input type = 'number' id = 'cvalue', name = 'cvalue', required = 'required', placeholder = 'Enter carbon value...' >
+
+					<br></br>
+
+
+					<label></label>
+					<input id="predict" type="submit" value="Predict" />
+				</form>
+				    
+					<br></br>
+				<center><h2>{{cprediction}}</h2></center>
+				
+			</div>
+<div class="circle">            
+</div>
+<br></br>
+<div class="circle1">          
+</div>
+<div class="circle2">               
+</div>
+<br></br>
+<div class="circle3">               
+</div>
+<div class="circle4">               
+</div>
+	 
+			<div class="two">
+	  
+					<br></br>
+					<br></br>
+		 
+			<div class="twosub">
+					<h2>Check the level of nitrogen in your soil here!!</h2>
+					</div>
+		 
+				<form method = "POST" action = "{{ url_for('npr')}}">
+
+					<label for = "nvalue">N value</label>
+					<input type = 'number' id = 'nvalue', name = 'nvalue', required = 'required', placeholder = 'Enter nitrogen value...' >
+
+					<br></br>
+					<label></label>
+					<input id="predict" type="submit" value="Predict" />
+				</form>
+				
+				<center><h2>{{nprediction}}</h2></center>
+				
+			</div>
+	 
+			<div class="three">
+	  
+					<br></br>
+					<br></br>
+			
+			<div class="threesub">
+					<h2>Do you want to know the level of phosphorous??</h2>
+					<h2>Find out here!!!</h2>
+			</div>
+		 
+				<form method = "POST" action = "{{ url_for('pp')}}">
+
+					<label for = "pvalue">P value</label>
+					<input type = 'number' id = 'pvalue', name = 'pvalue', required = 'required', placeholder = 'Enter phosphorous value...' >
+
+					<br></br>
+
+					<label></label>
+					<input id="predict" type="submit" value="Predict" />
+					
+		        </form>
+				
+				<center><h2>{{pprediction}}</h2></center>
+				
+	        </div>
+<div class="circle">            
+</div>
+<br></br>
+<div class="circle1">          
+</div>
+<div class="circle2">               
+</div>
+<br></br>
+<div class="circle3">               
+</div>
+<div class="circle4">               
+</div>
+			<div class="four">
+	  
+					<br></br>
+					<br></br>
+			
+			<div class="foursub">
+					<h2>Do you want to know the level of potassium??</h2>
+					<h2>Find out here!!!</h2>
+			</div>
+		 
+				<form method = "POST" action = "{{ url_for('kp')}}">
+
+					<label for = "kvalue">K value</label>
+					<input type = 'number' id = 'kvalue', name = 'kvalue', required = 'required', placeholder = 'Enter potassium value...' >
+
+					<br></br>
+
+					<label></label>
+					<input id="predict" type="submit" value="Predict" />
+					
+		        </form>
+				
+				<center><h2>{{kprediction}}</h2></center>
+				
+	        </div>
+<div class="circle">            
+</div>
+<br></br>
+<div class="circle1">          
+</div>
+<div class="circle2">               
+</div>
+<br></br>
+<div class="circle3">               
+</div>
+<div class="circle4">               
+</div>
+	</body>
+</html>
